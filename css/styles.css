@@ -1,0 +1,246 @@
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .w3-wide {
+      color: black;
+      vertical-align: baseline;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+[class*="form"]{
+  text-align: center;
+}
+
+.flex-blox{
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media only screen and (max-width: 991px) {
+  #collapseNav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    align-items: center;
+  }
+  #NavHeader{
+    align-items: center;
+    background-color: aqua;
+    padding-top: 5%;
+  }
+  .pesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  #collapseNav {
+    display: flex;
+    flex-direction: row;
+    justify-items:flex-end;
+    flex-wrap: wrap;
+    align-items: center;;
+  }
+  .pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:whitesmoke;
+  border-radius:30px;
+  color: black;
+}
+
+.active {
+  background-color:#2e97c2;
+  border-radius: 30px; 
+  color: black;
+}
+
+    /* .w3-main{
+      margin-left: 16%;
+      margin-right: 16%;
+    } */
+
+    #t1{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+    #imgLogo{
+      width:20%;
+    }
+
+    #fim{
+      background-color: #263f6b;
+      color: white;
+    }
+
+    #register{
+      background-color:#263f6b;
+      color: white;
+    }
+
+    #buttonRegister,
+    #btFooder button{
+      background-color: #2e97c2;
+      color: white;
+      border-radius: 10px;
+    }
+
+    #mainDiv
+    {
+      display: flex;
+      width:100%;
+      align-items: baseline;
+    }
+
+    #NavHeader{
+      width: 100%;
+      background-color: #263f6b;
+      border-radius: 25px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+    header{
+      align-items: baseline;
+      flex-wrap: wrap;
+      padding-top: 1%;
+    }
+    .register{
+      border-top-left-radius: 50px;
+      border-bottom-right-radius:50px;
+    }
+    .FimPag{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    .material-icons{
+      width: auto;
+      color: white;
+    }
+
+    #FimCart{
+      background-color: #263f6b;
+      color: white;
+    }
+
+    .flex-container {
+      display: flex;
+      grid-template-columns: auto auto auto auto;
+      padding: 25px;
+      column-gap: 30px;
+      row-gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* .w3-col {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px;
+      font-size: 22px;
+      text-align: center;
+      height: 458px;
+    } */
+
+    .class2{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+    }
+    .class3{
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: rgb(0 0 0 / 50%) 0px 2px 6px;
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      margin: 15px 0px;
+      height: 100%;
+      width: 280px;
+      border-radius: 25px;
+      flex-direction: column;
+    }
+    .class4{
+      background: rgb(108, 201, 71);
+      height: 48px;
+      width:100%;
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      -webkit-box-pack: center;
+      justify-content: center;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      
+    }
+    .class4-1{
+      display: flex;
+      width: 100px;
+      justify-content: flex-end;
+    }
+    .class4 p{
+      color: aqua;
+      justify-content:  center;
+    }
+
+    .p-cart{
+      font-weight: bold;
+      color: black;
+      padding-top: 2%;
+    }

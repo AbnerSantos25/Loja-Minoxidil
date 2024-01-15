@@ -1,0 +1,76 @@
+$Sitecolor: #263f6b;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.w3-wide {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+#t1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#divMain{
+  margin-left:150px;
+  margin-right:150px;
+}
+
+#imgLogo{
+  width:20%;
+}
+
+/* #fim{
+  background-color: #263f6b;
+  color: white;
+} */
+
+#register{
+  background-color:#263f6b;
+  color: white;
+}
+
+#buttonRegister,
+#btFooder button,
+#conteudoNavbarSuportado button{
+  background-color: #2e97c2;
+  color: white;
+  border-radius: 10px;
+}
+
+
+#Header{
+  width: 100%;
+  background-color:#263f6b;
+}
+#Header button{
+  background-color: #2e97c2;
+  color: white;
+  border-radius: 10px;
+  border-color: white;
+}
+
+#conteudoNavbarSuportado a{
+  color: white;
+}
+
+#NavCart{
+  color: #0073e6;
+}
+
+/* .target {
+  font-size: 50px;
+  transition: font-size 5s 1s;
+}
+
+.target:hover {
+  font-size: 100px;
+} */

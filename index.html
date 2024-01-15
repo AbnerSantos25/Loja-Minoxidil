@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- botao enviar dos CONTATOS-Colocar uma notificação que a mensagem foi enviada. 
+-- criar o carrinho de compra -->
+<head>
+  <title>Loja</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <!--LOCASTYKE-->
+  <link href="http://assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css" rel="stylesheet" type="text/css">
+    <link rel="icon" sizes="192x192" href="/locawebstyle/assets/images/ico-boilerplate.png">
+    <link rel="apple-touch-icon" href="/locawebstyle/assets/images/ico-boilerplate.png">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body style="max-width: 1350px;" class="w3-content w3-container">
+  <!-- !PAGE CONTENT! -->
+  <div id="divMain" class="w3-main">
+    <!-- Top header -->
+    <header class="w3-xlarge">
+      <nav id="NavHeader" class="navbar navbar-light">
+          <div class="">
+            <img src="./img/logo.png  " alt="Logo" style="width:100px;"></img>
+          </div>
+          <div class="w3-center" id="collapseNav">
+            <div class="w3-container menu">
+              <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+              </div>
+              <!-- <ul class="navbar-nav mr-auto">
+                <lu class="nav-item">
+                  <a href="#IDitens" class="nav-link" style="font-size: 17px;">Loja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 17px;" href="javascript:void(0)" onclick="document.getElementById('IDRegister').style.display='block'">Registrar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 17px;" href="javascript:void(0)" onclick="document.getElementById('myModal').style.display='block'">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Cart.html" class="nav-link" style="font-size: 17px;">Carrinho</a>
+                </li>
+              </ul> -->
+            </div>
+            <div class="search">
+              <form class="w3-content pesquisa">
+                <input class="form-control " type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <i class="material-icons">search</i></button>
+              </form>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Image header -->
+    <div id="headerdiv" class="w3-display-container">
+      <img src="./img/Front.png" alt="img" style="width:100% ; border-top-left-radius: 30px; border-bottom-right-radius: 30px;">
+      <div>
+        <a style="width: 100%" href="#divcart" id="t1" class="w3-button w3-black">COMPRAR AGORA!</a>
+      </div>
+    </div>
+    <!-- Product grid -->
+    <div id="divcart" class="flex-container">
+        <div class="class2" >
+          <div class="w3-conteiner w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="class2" >
+          <div class="w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="class2" >
+          <div class="w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="class2" >
+          <div class="w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+      
+        <div class="class2" >
+          <div class="w3-conteiner w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="class2" >
+          <div class="w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="class2" >
+          <div class="w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="class2" >
+          <div class="w3-center class3">
+            <div class="w3-center class4">
+              10% de Desconto
+            </div>
+            <div class="class4.1">
+              <img src="https://uscloser.com/loja/30773-large_default/1-frasco-60ml-minoxidil-frete-incluso.jpg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- Subscribe section -->
+    <div id="register" class="w3-container w3-padding-32 register">
+      <h1>Registrar</h1>
+      <p>Registre-se aqui para receber na primeira compra um cupom de 10% OFF<br> E receber todas nossas promoções!</p>
+	  <p>Clique aqui no Botão abaixo e garanta o cupom!</p>
+	  <button id="buttonRegister" href="javascript:void(0)" class="w3-button"
+      onclick="document.getElementById('IDRegister').style.display='block'">Registrar</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-small w3-center" id="footer">
+      <div class="w3-row-padding" id="btFooder">
+        <div class="w3-col s4">
+          <h4>Contatos</h4>
+          <p>Tire aqui suas duvidas!</p>
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Assunto" name="Subject" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Mensagem" name="Message" required></p>
+            <button type="button" class="w3-button w3-block">Enviar</button>
+          </form>
+        </div>
+
+        <div class="w3-col s4">
+          <h4>Sobre</h4>
+          <p><a href="#">Sobre nós</a></p>
+          <p><a href="#">Suporte</a></p>
+          <p><a href="#">Encontrar loja</a></p>
+          <p><a href="#">Envio</a></p>
+          <p><a href="#">Pagamento</a></p>
+          <p><a href="#">Retornar</a></p>
+          <p><a href="#">Ajuda</a></p>
+        </div>
+
+        <div class="w3-col s4 w3-justify">
+          <h4>Loja</h4>
+          <p><i class="fa fa-fw fa-map-marker"></i> S.O.S Minoxidil</p>
+          <p><i class="fa fa-fw fa-phone"></i> (17)99755-6141</p>
+          <p><i class="fa fa-fw fa-envelope"></i> SOSMinoxidil@gmail.com</p>
+          <h4>Nós Aceitamos</h4>
+          <p><i class="fa fa-fw fa-cc-amex"></i> Debit Card</p>
+          <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+          <br>
+          <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+          <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+          <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+          <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+          <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+      </div>
+    </footer>
+
+    <div id="fim" class="w3-center w3-padding-24 FimPag">Criado Por 
+      <a href="https://www.instagram.com/Abnerr_ofc/" title="W3.CSS"
+        target="_blank" class="w3-hover-opacity">Abner Santos
+      </a>
+    </div>
+    <!-- End page content -->
+  </div>
+
+  <!-- registrar Modal -->
+  <div id="IDRegister" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+      <div class="w3-container w3-white w3-center">
+        <i onclick="document.getElementById('IDRegister').style.display='none'"
+          class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+        <h2 class="w3-wide">Registrar</h2>
+        <p>Area Exclusiva para registro de Clientes</p>
+        <form name="form1">
+          <p><input class="w3-input w3-border" id="txtUser1" type="text" placeholder="Nome Completo" name="User1"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" name="email"></p>
+          <p><input type="password" class="form-control" id="IDPassword" placeholder="Senha" name="password1" ><p>
+        </form>        
+        <button type="button" onclick="verificarRegistro()" class="w3-button w3-padding-large w3-red w3-margin-bottom">REGISTRO</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Tela de Login -->
+    <div class="w3-modal" id="myModal">
+      <div class="modal-dialog w3-animate-zoom" style="padding: 32px">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Entrar</h4>
+            <i onclick="document.getElementById('myModal').style.display='none'"
+            class="fa fa-remove w3-right w3-transparent w3-xxlarge"></i>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form name="form">
+              <p><input class="w3-input w3-border" id="txtUser" type="text" placeholder="Email" name="Email"></p>
+              <p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="password" ><p>
+            </form>    
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" onclick="verificarTexto()" class="w3-button w3-padding-large w3-red w3-margin-bottom">Logar</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Modal BOAS VINDAS-->
+  <div class="w3-modal" id="BemVindo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <i onclick="document.getElementById('BemVindo').style.display='none'"
+        class="fa fa-remove w3-display-topright w3-red" id="btnFecharBV"></i>
+      </div>
+        <p><img class="img-fluid" src="./img/BemVindo.png" style="width:100%"></p>
+    </div>
+  </div>
+
+  <script>
+  </script>
+  <!-- javascript -->
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  </script>
+  
+  
+    <!-- bootstrap5 js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+</html>

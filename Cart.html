@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- botao enviar dos CONTATOS-Colocar uma notificação que a mensagem foi enviada. 
+-- criar o carrinho de compra -->
+<head>
+  <title>Cart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <!--LOCASTYKE-->
+  <link href="http://assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css" rel="stylesheet" type="text/css">
+    <link rel="icon" sizes="192x192" href="/locawebstyle/assets/images/ico-boilerplate.png">
+    <link rel="apple-touch-icon" href="/locawebstyle/assets/images/ico-boilerplate.png">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body style="max-width: 1200px;" class="w3-content w3-container">
+  <!-- !PAGE CONTENT! -->
+  <div id="DivMain2" class="w3-main">
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:20px"></div>
+
+    <!-- Top header -->
+    <header class="w3-xlarge">
+      <nav id="NavHeader2" class="navbar navbar-expand-lg navbar-light">
+        <img src="./img/logo.png  " alt="Logo" style="width:20%;"></img>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" 
+        aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="font-size: 17px;">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 17px;" href="javascript:void(0)" onclick="document.getElementById('IDRegister').style.display='block'">Registrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: 17px;" href="javascript:void(0)" onclick="document.getElementById('myModal').style.display='block'">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="Cart.html" class="nav-link w3-hide" style="font-size: 17px;">Carrinho</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn btn-outline-primary my-2 my-sm-0" type="button">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <nav class="navbar navbar-default">
+      <div id="NavCart" class="container-fluid">
+        <div class="navbar-header">
+          <a id="navTitle" class="navbar-brand" href="Cart.html">Carrinho De Produtos</a>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- cart -->
+    <div class="container-fluid w3-large">
+      <div class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" id="desc" placeholder="Description">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="amount" placeholder="Amount">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="value" placeholder="Value">
+        </div>
+        <span id="btnUpdate" style="display: none;">
+          <span id="inputIDUpdate"></span>
+          <button onclick="updateData();" class="btn btn-default">Save</button>
+          <button onclick="resetForm();" class="btn btn-default">Cancel</button>
+        </span>
+        <span id="btnAdd">
+          <button onclick="addCart();" class="btn btn-default">Add</button>
+          <button onclick="resetForm();" class="btn btn-default">Reset</button>
+          <button onclick="deleteList();" class="btn btn-default">Delete list</button>
+        </span>
+      </div>
+  
+      <div id="errors" style="display: none;"></div>
+  
+      <table id="listTable1" class="table">
+      
+      </table>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <h4 class="text-center text-success">Total: <span id="totalValue">$ 0,00</span></h4>
+      </div>
+    </nav>
+    <!-- Fim da Pagina -->
+    <div class="w3-center w3-padding-24" id="FimCart">Criado Por <a href="https://www.instagram.com/Abnerr_ofc/" title="W3.CSS"
+      target="_blank" class="w3-hover-opacity">Abner Santos</a></div>
+    <!-- End page content -->
+  </div>
+
+  <!-- Tela de Login -->
+    <div class="w3-modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Entrar</h4>
+            <i onclick="document.getElementById('myModal').style.display='none'"
+            class="fa fa-remove w3-right w3-transparent w3-xxlarge"></i>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form name="form">
+              <p><input class="w3-input w3-border" id="txtUser" type="text" placeholder="Nome" name="User"></p>
+              <p><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="password" ><p>
+            </form>    
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" onclick="verificarTexto()" class="w3-button w3-padding-large w3-red w3-margin-bottom">Logar</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- registrar Modal -->
+  <div id="IDRegister" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+      <div class="w3-container w3-white w3-center">
+        <i onclick="document.getElementById('IDRegister').style.display='none'"
+          class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+        <h2 class="w3-wide">Registrar</h2>
+        <p>Area Exclusiva para registro de Clientes</p>
+        <form name="form1">
+          <p><input class="w3-input w3-border" id="txtUser1" type="text" placeholder="Nome" name="User1"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" name="email"></p>
+          <p><input type="password" class="form-control" id="IDPassword" placeholder="Senha" name="password1" ><p>
+        </form>        
+        <button type="button" onclick="verificarRegistro()" class="w3-button w3-padding-large w3-red w3-margin-bottom">REGISTRO</button>
+      </div>
+    </div>
+  </div>
+  
+  <!--Modal BOAS VINDAS-->
+  <div class="w3-modal" id="BemVindo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <i onclick="document.getElementById('BemVindo').style.display='none'"
+        class="fa fa-remove w3-display-topright w3-red" id="btnFecharBV"></i>
+      </div>
+        <p><img class="img-fluid" src="./img/BemVindo.png" style="width:100%"></p>
+    </div>
+  </div>
+  
+  </script>
+    <!-- bootstrap5 js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+   
+  </body>
+</html>
